@@ -2,7 +2,6 @@
 
 
 /*
- 
 ********************************************************************************
  
 system_stm32f4xx.c 文件中 voidSetSysClock(void) 函数对时钟的配置如下：
@@ -25,7 +24,14 @@ TIM 更新周期是 = TIMCLK / （TIM_Period + 1）/（TIM_Prescaler+ 1）
 ********************************************************************************
 */
 
-
+/**
+ * @brief 	扫频定时器中断初始化函数
+ * 
+ * @param		arr
+ *					psc
+ *
+ * @return	none 
+ */
 void TIM4_Int_Init_2(u16 arr,u16 psc)   //通用定时器3初始化   84MHz
 {
     TIM_TimeBaseInitTypeDef TIM_TimeBaseInitStructure;  
@@ -50,7 +56,12 @@ void TIM4_Int_Init_2(u16 arr,u16 psc)   //通用定时器3初始化   84MHz
 
 }
 
-
+/**
+ * @brief 	TIM4中断服务函数
+ * 
+ * @param		none
+ * @return	none 
+ */
 void TIM4_IRQHandler(void)  // 定时器中断服务函数
 {
 	if(TIM_GetITStatus(TIM4,TIM_IT_Update)==SET) //溢出，中断

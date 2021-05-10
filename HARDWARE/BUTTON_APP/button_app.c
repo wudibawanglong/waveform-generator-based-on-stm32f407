@@ -6,10 +6,15 @@ u8 i=0;
 u16 lastpos[5][2];		//最后一次的数据
 long long Freq_yuzhi = 0, A_yuzhi = 0;
 u16 Freq_judge = 0, A_judge = 0;
-
 u16 sweep_judge = 0;  // 扫频标志位
 
 
+/**
+ * @brief 	屏幕UI初始化函数
+ * 
+ * @param		none
+ * @return	none 
+ */
 void bsp_GUI_Init(void)
 {
 	LCD_Fill(240,280,310,340, YELLOW);	
@@ -87,7 +92,7 @@ void bsp_GUI_Init(void)
 	
 	
 	
-	/******************下半部分***************************/
+	/******************屏幕下半部分***************************/
 	
 	POINT_COLOR = DARKBLUE;
 	LCD_DrawLine(310, 400, 310, 460);
@@ -126,6 +131,13 @@ void bsp_GUI_Init(void)
 	POINT_COLOR = BLUE;
 }
 
+
+/**
+ * @brief 	按键响应函数
+ * 
+ * @param		none
+ * @return	none 
+ */
 void Button_App(void)
 {
 	//printf("%d %d \n", tp_dev.x[t], tp_dev.y[t]);
@@ -414,10 +426,8 @@ void Button_App(void)
 		}  // SWEEP
 		
 	}//end of if(cnt == 1)
-	
-
-
 }
+
 
 //清空屏幕并在右上角显示"RST"
 void Load_Drow_Dialog(void)
@@ -517,89 +527,15 @@ void lcd_draw_bline(u16 x1, u16 y1, u16 x2, u16 y2,u8 size,u16 color)
 	}  
 }
 ////////////////////////////////////////////////////////////////////////////////
- //5个触控点的颜色(电容触摸屏用)												 
+//5个触控点的颜色(电容触摸屏用)												 
 const u16 POINT_COLOR_TBL[OTT_MAX_TOUCH]={RED,GREEN,BLUE,BROWN,GRED};  
 
-
-//void scan_touch_key(void)
-//{
-//	while(1)
-//	{
-//		tp_dev.scan(0);	
-//		if(tp_dev.sta&TP_PRES_DOWN)//触摸屏被按下
-//		{		
-//			if(tp_dev.sta&TP_PRES_DOWN)//触摸屏被按下
-//			{
-//				Button_App();
-//				cnt++;
-//				delay_ms(50);
-//			}
-//		}
-//		LCD_ShowxNum(350,10,Recent_Freq,6,24,0XFE);
-//		LCD_ShowxNum(350,70,(((double)(Recent_A)/4095)*3.3*1000),6,24,0XFE);
-//		
-//		if(!(tp_dev.sta&TP_PRES_DOWN))//触摸屏被松开
-//		{		
-//			if(!(tp_dev.sta&TP_PRES_DOWN))//触摸屏被松开
-//			{
-//				printf("*************************\n");
-//				cnt = 0;  // cnt置0
-//			}
-//		}
-//		Show_Wave();
-//		
-//		
-//		
-//		if(tim_1024_judge == 1){
-//			max = 0;
-//			tim_1024_judge = 0;
-//			TIM_Cmd(TIM3,DISABLE);                           //使能定时器
-//			
-//			
-//			for(i=0;i<FFT_LENGTH;i++){
-//				fft_inputbuf[2*i]=(float)adc_get[i]/4095;	//生成输入信号实部
-//				fft_inputbuf[2*i+1]=0;//虚部全部为0
-//			}
-//			
-//			
-//			/*
-//			for(i=0;i<FFT_LENGTH;i++){//生成信号序列
-//				 fft_inputbuf[2*i]= 100+ 50*arm_sin_f32(200*PI*i/FFT_LENGTH);	//生成输入信号实部  f = w/2π = 1kHz
-//				 fft_inputbuf[2*i+1]=0;//虚部全部为0
-//			}
-//			*/
-//			
-//			
-//		
-//			arm_cfft_radix4_f32(&scfft,fft_inputbuf);	//FFT计算（基4）
-//			arm_cmplx_mag_f32(fft_inputbuf,fft_outputbuf,FFT_LENGTH);	//把运算结果复数求模得幅值 
-//			
-//			
-//			/*
-//			for(i=0;i<FFT_LENGTH;i++)
-//			{
-//				printf("fft_outputbuf[%d]:%f\r\n",i,fft_outputbuf[i]);
-//				//printf("%d\n", adc_get[i]);
-//			}
-//			*/
-//			//找到最大幅值以及对应的下标
-//			for(i=1;i<FFT_LENGTH;i++)  // 不加1求出来的是直流分量?
-//			{
-//				if(fft_outputbuf[i] > max){
-//					max = fft_outputbuf[i];
-//					max_index = i;
-//				}
-//			}
-//			Freq_FFT = max_index*20000/FFT_LENGTH;
-//			printf("%f %d Freq: %d\n", max, max_index, Freq_FFT);
-//			
-//			printf("\n\n\n");	
-//			TIM_Cmd(TIM3,ENABLE);
-//		}// end of if(tim_1024_judge == 1)
-//	} // end of while(1)
-//}
-
-
+/**
+ * @brief 	TFT初始化函数
+ * 
+ * @param		none
+ * @return	none 
+ */
 void TFT_LCD_Init(void)
 {
 	NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);//设置系统中断优先级分组2

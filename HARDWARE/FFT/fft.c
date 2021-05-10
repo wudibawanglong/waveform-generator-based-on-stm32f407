@@ -1,5 +1,14 @@
 #include "fft.h"
 
+
+/**
+ * @brief 	找第二大值
+ * 
+ * @param		fft_outputbuf[] : fft输出的数组
+ *					len : 数组长度
+ *
+ * @return	none 
+ */
 void Find_Second(float fft_outputbuf[], u16 len)
 {
 	u16 i;
@@ -11,7 +20,15 @@ void Find_Second(float fft_outputbuf[], u16 len)
 		}
 	}
 }
- //&& fft_outputbuf[i] > fft_outputbuf[i+1] && fft_outputbuf[i] > fft_outputbuf[i-1]
+
+/**
+ * @brief 	找第三大值
+ * 
+ * @param		fft_outputbuf[] : fft输出的数组
+ *					len : 数组长度
+ *
+ * @return	none 
+ */
 void Find_Third(float fft_outputbuf[], u16 len)
 {
 	u16 i;
@@ -23,4 +40,3 @@ void Find_Third(float fft_outputbuf[], u16 len)
 		}
 	}
 }
-// && fft_outputbuf[i] > fft_outputbuf[i+1] && fft_outputbuf[i] > fft_outputbuf[i-1]

@@ -1,5 +1,5 @@
 Dependencies for Project 'DAC', Target 'DAC': (DO NOT MODIFY !)
-F (.\main.c)(0x6097CC6D)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I ..\CORE -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\HARDWARE\LED -I ..\HARDWARE\LCD -I ..\HARDWARE\KEY -I ..\HARDWARE\ADC -I ..\HARDWARE\DAC -I ..\FWLIB\inc -I ..\HARDWARE\TIMER -I ..\HARDWARE\24CXX -I ..\HARDWARE\TOUCH -I ..\HARDWARE\KEY -I ..\HARDWARE\IIC -I ..\HARDWARE\BUTTON_APP -I ..\HARDWARE\DSP_LIB -I ..\HARDWARE\DSP_LIB\Include -I ..\HARDWARE\FFT -I ..\HARDWARE\SWEEP-I.\RTE\_DAC-ID:\app\keilARM\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\app\keilARM\ARM\CMSIS\Include-ID:\app\keilARM\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Device\Include-D__UVISION_VERSION="526" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER --C99-o ..\obj\main.o --omf_browse ..\obj\main.crf --depend ..\obj\main.d)
+F (.\main.c)(0x60992DBC)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I ..\CORE -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\HARDWARE\LED -I ..\HARDWARE\LCD -I ..\HARDWARE\KEY -I ..\HARDWARE\ADC -I ..\HARDWARE\DAC -I ..\FWLIB\inc -I ..\HARDWARE\TIMER -I ..\HARDWARE\24CXX -I ..\HARDWARE\TOUCH -I ..\HARDWARE\KEY -I ..\HARDWARE\IIC -I ..\HARDWARE\BUTTON_APP -I ..\HARDWARE\DSP_LIB -I ..\HARDWARE\DSP_LIB\Include -I ..\HARDWARE\FFT -I ..\HARDWARE\SWEEP-I.\RTE\_DAC-ID:\app\keilARM\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\app\keilARM\ARM\CMSIS\Include-ID:\app\keilARM\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Device\Include-D__UVISION_VERSION="526" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER --C99-o ..\obj\main.o --omf_browse ..\obj\main.crf --depend ..\obj\main.d)
 I (..\SYSTEM\sys\sys.h)(0x6097A5BE)
 I (..\USER\stm32f4xx.h)(0x5710F380)
 I (..\CORE\core_cm4.h)(0x5710F37F)
@@ -54,7 +54,7 @@ I (..\HARDWARE\DAC\dac.h)(0x60977AB8)
 I (..\HARDWARE\DSP_LIB\Include\arm_math.h)(0x60974218)
 I (D:\app\keilARM\ARM\ARMCC\include\string.h)(0x599EDB3C)
 I (D:\app\keilARM\ARM\ARMCC\include\math.h)(0x599EDB3E)
-I (..\HARDWARE\ADC\adc.h)(0x6097AE8B)
+I (..\HARDWARE\ADC\adc.h)(0x60992FD5)
 I (..\HARDWARE\SWEEP\sweep.h)(0x6097AABA)
 I (..\HARDWARE\FFT\fft.h)(0x60975C1D)
 F (.\stm32f4xx_it.c)(0x5710F380)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I ..\CORE -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\HARDWARE\LED -I ..\HARDWARE\LCD -I ..\HARDWARE\KEY -I ..\HARDWARE\ADC -I ..\HARDWARE\DAC -I ..\FWLIB\inc -I ..\HARDWARE\TIMER -I ..\HARDWARE\24CXX -I ..\HARDWARE\TOUCH -I ..\HARDWARE\KEY -I ..\HARDWARE\IIC -I ..\HARDWARE\BUTTON_APP -I ..\HARDWARE\DSP_LIB -I ..\HARDWARE\DSP_LIB\Include -I ..\HARDWARE\FFT -I ..\HARDWARE\SWEEP-I.\RTE\_DAC-ID:\app\keilARM\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\app\keilARM\ARM\CMSIS\Include-ID:\app\keilARM\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Device\Include-D__UVISION_VERSION="526" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER --C99-o ..\obj\stm32f4xx_it.o --omf_browse ..\obj\stm32f4xx_it.crf --depend ..\obj\stm32f4xx_it.d)
@@ -184,11 +184,11 @@ I (..\HARDWARE\DAC\dac.h)(0x60977AB8)
 I (..\HARDWARE\DSP_LIB\Include\arm_math.h)(0x60974218)
 I (D:\app\keilARM\ARM\ARMCC\include\string.h)(0x599EDB3C)
 I (D:\app\keilARM\ARM\ARMCC\include\math.h)(0x599EDB3E)
-I (..\HARDWARE\ADC\adc.h)(0x6097AE8B)
+I (..\HARDWARE\ADC\adc.h)(0x60992FD5)
 I (..\HARDWARE\SWEEP\sweep.h)(0x6097AABA)
 I (D:\app\keilARM\ARM\ARMCC\include\stdlib.h)(0x599EDB3C)
 I (..\HARDWARE\LCD\font.h)(0x5710F391)
-F (..\HARDWARE\DAC\dac.c)(0x60978A48)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I ..\CORE -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\HARDWARE\LED -I ..\HARDWARE\LCD -I ..\HARDWARE\KEY -I ..\HARDWARE\ADC -I ..\HARDWARE\DAC -I ..\FWLIB\inc -I ..\HARDWARE\TIMER -I ..\HARDWARE\24CXX -I ..\HARDWARE\TOUCH -I ..\HARDWARE\KEY -I ..\HARDWARE\IIC -I ..\HARDWARE\BUTTON_APP -I ..\HARDWARE\DSP_LIB -I ..\HARDWARE\DSP_LIB\Include -I ..\HARDWARE\FFT -I ..\HARDWARE\SWEEP-I.\RTE\_DAC-ID:\app\keilARM\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\app\keilARM\ARM\CMSIS\Include-ID:\app\keilARM\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Device\Include-D__UVISION_VERSION="526" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER --C99-o ..\obj\dac.o --omf_browse ..\obj\dac.crf --depend ..\obj\dac.d)
+F (..\HARDWARE\DAC\dac.c)(0x60992E0F)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I ..\CORE -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\HARDWARE\LED -I ..\HARDWARE\LCD -I ..\HARDWARE\KEY -I ..\HARDWARE\ADC -I ..\HARDWARE\DAC -I ..\FWLIB\inc -I ..\HARDWARE\TIMER -I ..\HARDWARE\24CXX -I ..\HARDWARE\TOUCH -I ..\HARDWARE\KEY -I ..\HARDWARE\IIC -I ..\HARDWARE\BUTTON_APP -I ..\HARDWARE\DSP_LIB -I ..\HARDWARE\DSP_LIB\Include -I ..\HARDWARE\FFT -I ..\HARDWARE\SWEEP-I.\RTE\_DAC-ID:\app\keilARM\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\app\keilARM\ARM\CMSIS\Include-ID:\app\keilARM\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Device\Include-D__UVISION_VERSION="526" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER --C99-o ..\obj\dac.o --omf_browse ..\obj\dac.crf --depend ..\obj\dac.d)
 I (..\HARDWARE\DAC\dac.h)(0x60977AB8)
 I (..\SYSTEM\sys\sys.h)(0x6097A5BE)
 I (..\USER\stm32f4xx.h)(0x5710F380)
@@ -243,7 +243,7 @@ I (D:\app\keilARM\ARM\ARMCC\include\stdio.h)(0x599EDB3C)
 I (..\HARDWARE\DSP_LIB\Include\arm_math.h)(0x60974218)
 I (D:\app\keilARM\ARM\ARMCC\include\string.h)(0x599EDB3C)
 I (D:\app\keilARM\ARM\ARMCC\include\math.h)(0x599EDB3E)
-I (..\HARDWARE\ADC\adc.h)(0x6097AE8B)
+I (..\HARDWARE\ADC\adc.h)(0x60992FD5)
 I (..\HARDWARE\SWEEP\sweep.h)(0x6097AABA)
 F (..\HARDWARE\24CXX\24cxx.c)(0x5710F391)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I ..\CORE -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\HARDWARE\LED -I ..\HARDWARE\LCD -I ..\HARDWARE\KEY -I ..\HARDWARE\ADC -I ..\HARDWARE\DAC -I ..\FWLIB\inc -I ..\HARDWARE\TIMER -I ..\HARDWARE\24CXX -I ..\HARDWARE\TOUCH -I ..\HARDWARE\KEY -I ..\HARDWARE\IIC -I ..\HARDWARE\BUTTON_APP -I ..\HARDWARE\DSP_LIB -I ..\HARDWARE\DSP_LIB\Include -I ..\HARDWARE\FFT -I ..\HARDWARE\SWEEP-I.\RTE\_DAC-ID:\app\keilARM\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\app\keilARM\ARM\CMSIS\Include-ID:\app\keilARM\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Device\Include-D__UVISION_VERSION="526" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER --C99-o ..\obj\24cxx.o --omf_browse ..\obj\24cxx.crf --depend ..\obj\24cxx.d)
 I (..\HARDWARE\24CXX\24cxx.h)(0x5710F391)
@@ -300,7 +300,7 @@ I (..\HARDWARE\DAC\dac.h)(0x60977AB8)
 I (..\HARDWARE\DSP_LIB\Include\arm_math.h)(0x60974218)
 I (D:\app\keilARM\ARM\ARMCC\include\string.h)(0x599EDB3C)
 I (D:\app\keilARM\ARM\ARMCC\include\math.h)(0x599EDB3E)
-I (..\HARDWARE\ADC\adc.h)(0x6097AE8B)
+I (..\HARDWARE\ADC\adc.h)(0x60992FD5)
 I (..\HARDWARE\SWEEP\sweep.h)(0x6097AABA)
 F (..\HARDWARE\IIC\myiic.c)(0x5710F391)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I ..\CORE -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\HARDWARE\LED -I ..\HARDWARE\LCD -I ..\HARDWARE\KEY -I ..\HARDWARE\ADC -I ..\HARDWARE\DAC -I ..\FWLIB\inc -I ..\HARDWARE\TIMER -I ..\HARDWARE\24CXX -I ..\HARDWARE\TOUCH -I ..\HARDWARE\KEY -I ..\HARDWARE\IIC -I ..\HARDWARE\BUTTON_APP -I ..\HARDWARE\DSP_LIB -I ..\HARDWARE\DSP_LIB\Include -I ..\HARDWARE\FFT -I ..\HARDWARE\SWEEP-I.\RTE\_DAC-ID:\app\keilARM\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\app\keilARM\ARM\CMSIS\Include-ID:\app\keilARM\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Device\Include-D__UVISION_VERSION="526" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER --C99-o ..\obj\myiic.o --omf_browse ..\obj\myiic.crf --depend ..\obj\myiic.d)
 I (..\HARDWARE\IIC\myiic.h)(0x5710F391)
@@ -357,7 +357,7 @@ I (..\HARDWARE\DAC\dac.h)(0x60977AB8)
 I (..\HARDWARE\DSP_LIB\Include\arm_math.h)(0x60974218)
 I (D:\app\keilARM\ARM\ARMCC\include\string.h)(0x599EDB3C)
 I (D:\app\keilARM\ARM\ARMCC\include\math.h)(0x599EDB3E)
-I (..\HARDWARE\ADC\adc.h)(0x6097AE8B)
+I (..\HARDWARE\ADC\adc.h)(0x60992FD5)
 I (..\HARDWARE\SWEEP\sweep.h)(0x6097AABA)
 F (..\HARDWARE\KEY\key.c)(0x60963620)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I ..\CORE -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\HARDWARE\LED -I ..\HARDWARE\LCD -I ..\HARDWARE\KEY -I ..\HARDWARE\ADC -I ..\HARDWARE\DAC -I ..\FWLIB\inc -I ..\HARDWARE\TIMER -I ..\HARDWARE\24CXX -I ..\HARDWARE\TOUCH -I ..\HARDWARE\KEY -I ..\HARDWARE\IIC -I ..\HARDWARE\BUTTON_APP -I ..\HARDWARE\DSP_LIB -I ..\HARDWARE\DSP_LIB\Include -I ..\HARDWARE\FFT -I ..\HARDWARE\SWEEP-I.\RTE\_DAC-ID:\app\keilARM\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\app\keilARM\ARM\CMSIS\Include-ID:\app\keilARM\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Device\Include-D__UVISION_VERSION="526" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER --C99-o ..\obj\key.o --omf_browse ..\obj\key.crf --depend ..\obj\key.d)
 I (..\HARDWARE\KEY\key.h)(0x60963609)
@@ -414,7 +414,7 @@ I (..\HARDWARE\DAC\dac.h)(0x60977AB8)
 I (..\HARDWARE\DSP_LIB\Include\arm_math.h)(0x60974218)
 I (D:\app\keilARM\ARM\ARMCC\include\string.h)(0x599EDB3C)
 I (D:\app\keilARM\ARM\ARMCC\include\math.h)(0x599EDB3E)
-I (..\HARDWARE\ADC\adc.h)(0x6097AE8B)
+I (..\HARDWARE\ADC\adc.h)(0x60992FD5)
 I (..\HARDWARE\SWEEP\sweep.h)(0x6097AABA)
 F (..\HARDWARE\LED\led.c)(0x5710F391)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I ..\CORE -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\HARDWARE\LED -I ..\HARDWARE\LCD -I ..\HARDWARE\KEY -I ..\HARDWARE\ADC -I ..\HARDWARE\DAC -I ..\FWLIB\inc -I ..\HARDWARE\TIMER -I ..\HARDWARE\24CXX -I ..\HARDWARE\TOUCH -I ..\HARDWARE\KEY -I ..\HARDWARE\IIC -I ..\HARDWARE\BUTTON_APP -I ..\HARDWARE\DSP_LIB -I ..\HARDWARE\DSP_LIB\Include -I ..\HARDWARE\FFT -I ..\HARDWARE\SWEEP-I.\RTE\_DAC-ID:\app\keilARM\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\app\keilARM\ARM\CMSIS\Include-ID:\app\keilARM\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Device\Include-D__UVISION_VERSION="526" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER --C99-o ..\obj\led.o --omf_browse ..\obj\led.crf --depend ..\obj\led.d)
 I (..\HARDWARE\LED\led.h)(0x5710F391)
@@ -471,7 +471,7 @@ I (..\HARDWARE\DAC\dac.h)(0x60977AB8)
 I (..\HARDWARE\DSP_LIB\Include\arm_math.h)(0x60974218)
 I (D:\app\keilARM\ARM\ARMCC\include\string.h)(0x599EDB3C)
 I (D:\app\keilARM\ARM\ARMCC\include\math.h)(0x599EDB3E)
-I (..\HARDWARE\ADC\adc.h)(0x6097AE8B)
+I (..\HARDWARE\ADC\adc.h)(0x60992FD5)
 I (..\HARDWARE\SWEEP\sweep.h)(0x6097AABA)
 F (..\HARDWARE\TOUCH\ctiic.c)(0x5710F391)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I ..\CORE -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\HARDWARE\LED -I ..\HARDWARE\LCD -I ..\HARDWARE\KEY -I ..\HARDWARE\ADC -I ..\HARDWARE\DAC -I ..\FWLIB\inc -I ..\HARDWARE\TIMER -I ..\HARDWARE\24CXX -I ..\HARDWARE\TOUCH -I ..\HARDWARE\KEY -I ..\HARDWARE\IIC -I ..\HARDWARE\BUTTON_APP -I ..\HARDWARE\DSP_LIB -I ..\HARDWARE\DSP_LIB\Include -I ..\HARDWARE\FFT -I ..\HARDWARE\SWEEP-I.\RTE\_DAC-ID:\app\keilARM\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\app\keilARM\ARM\CMSIS\Include-ID:\app\keilARM\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Device\Include-D__UVISION_VERSION="526" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER --C99-o ..\obj\ctiic.o --omf_browse ..\obj\ctiic.crf --depend ..\obj\ctiic.d)
 I (..\HARDWARE\TOUCH\ctiic.h)(0x5710F391)
@@ -528,7 +528,7 @@ I (..\HARDWARE\DAC\dac.h)(0x60977AB8)
 I (..\HARDWARE\DSP_LIB\Include\arm_math.h)(0x60974218)
 I (D:\app\keilARM\ARM\ARMCC\include\string.h)(0x599EDB3C)
 I (D:\app\keilARM\ARM\ARMCC\include\math.h)(0x599EDB3E)
-I (..\HARDWARE\ADC\adc.h)(0x6097AE8B)
+I (..\HARDWARE\ADC\adc.h)(0x60992FD5)
 I (..\HARDWARE\SWEEP\sweep.h)(0x6097AABA)
 F (..\HARDWARE\TOUCH\ft5206.c)(0x5710F391)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I ..\CORE -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\HARDWARE\LED -I ..\HARDWARE\LCD -I ..\HARDWARE\KEY -I ..\HARDWARE\ADC -I ..\HARDWARE\DAC -I ..\FWLIB\inc -I ..\HARDWARE\TIMER -I ..\HARDWARE\24CXX -I ..\HARDWARE\TOUCH -I ..\HARDWARE\KEY -I ..\HARDWARE\IIC -I ..\HARDWARE\BUTTON_APP -I ..\HARDWARE\DSP_LIB -I ..\HARDWARE\DSP_LIB\Include -I ..\HARDWARE\FFT -I ..\HARDWARE\SWEEP-I.\RTE\_DAC-ID:\app\keilARM\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\app\keilARM\ARM\CMSIS\Include-ID:\app\keilARM\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Device\Include-D__UVISION_VERSION="526" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER --C99-o ..\obj\ft5206.o --omf_browse ..\obj\ft5206.crf --depend ..\obj\ft5206.d)
 I (..\HARDWARE\TOUCH\ft5206.h)(0x5710F391)
@@ -585,7 +585,7 @@ I (..\HARDWARE\DAC\dac.h)(0x60977AB8)
 I (..\HARDWARE\DSP_LIB\Include\arm_math.h)(0x60974218)
 I (D:\app\keilARM\ARM\ARMCC\include\string.h)(0x599EDB3C)
 I (D:\app\keilARM\ARM\ARMCC\include\math.h)(0x599EDB3E)
-I (..\HARDWARE\ADC\adc.h)(0x6097AE8B)
+I (..\HARDWARE\ADC\adc.h)(0x60992FD5)
 I (..\HARDWARE\SWEEP\sweep.h)(0x6097AABA)
 F (..\HARDWARE\TOUCH\gt9147.c)(0x5ECC7CC9)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I ..\CORE -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\HARDWARE\LED -I ..\HARDWARE\LCD -I ..\HARDWARE\KEY -I ..\HARDWARE\ADC -I ..\HARDWARE\DAC -I ..\FWLIB\inc -I ..\HARDWARE\TIMER -I ..\HARDWARE\24CXX -I ..\HARDWARE\TOUCH -I ..\HARDWARE\KEY -I ..\HARDWARE\IIC -I ..\HARDWARE\BUTTON_APP -I ..\HARDWARE\DSP_LIB -I ..\HARDWARE\DSP_LIB\Include -I ..\HARDWARE\FFT -I ..\HARDWARE\SWEEP-I.\RTE\_DAC-ID:\app\keilARM\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\app\keilARM\ARM\CMSIS\Include-ID:\app\keilARM\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Device\Include-D__UVISION_VERSION="526" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER --C99-o ..\obj\gt9147.o --omf_browse ..\obj\gt9147.crf --depend ..\obj\gt9147.d)
 I (..\HARDWARE\TOUCH\gt9147.h)(0x5710F391)
@@ -642,7 +642,7 @@ I (..\HARDWARE\DAC\dac.h)(0x60977AB8)
 I (..\HARDWARE\DSP_LIB\Include\arm_math.h)(0x60974218)
 I (D:\app\keilARM\ARM\ARMCC\include\string.h)(0x599EDB3C)
 I (D:\app\keilARM\ARM\ARMCC\include\math.h)(0x599EDB3E)
-I (..\HARDWARE\ADC\adc.h)(0x6097AE8B)
+I (..\HARDWARE\ADC\adc.h)(0x60992FD5)
 I (..\HARDWARE\SWEEP\sweep.h)(0x6097AABA)
 F (..\HARDWARE\TOUCH\ott2001a.c)(0x5710F391)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I ..\CORE -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\HARDWARE\LED -I ..\HARDWARE\LCD -I ..\HARDWARE\KEY -I ..\HARDWARE\ADC -I ..\HARDWARE\DAC -I ..\FWLIB\inc -I ..\HARDWARE\TIMER -I ..\HARDWARE\24CXX -I ..\HARDWARE\TOUCH -I ..\HARDWARE\KEY -I ..\HARDWARE\IIC -I ..\HARDWARE\BUTTON_APP -I ..\HARDWARE\DSP_LIB -I ..\HARDWARE\DSP_LIB\Include -I ..\HARDWARE\FFT -I ..\HARDWARE\SWEEP-I.\RTE\_DAC-ID:\app\keilARM\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\app\keilARM\ARM\CMSIS\Include-ID:\app\keilARM\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Device\Include-D__UVISION_VERSION="526" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER --C99-o ..\obj\ott2001a.o --omf_browse ..\obj\ott2001a.crf --depend ..\obj\ott2001a.d)
 I (..\HARDWARE\TOUCH\ott2001a.h)(0x5710F391)
@@ -699,7 +699,7 @@ I (..\HARDWARE\DAC\dac.h)(0x60977AB8)
 I (..\HARDWARE\DSP_LIB\Include\arm_math.h)(0x60974218)
 I (D:\app\keilARM\ARM\ARMCC\include\string.h)(0x599EDB3C)
 I (D:\app\keilARM\ARM\ARMCC\include\math.h)(0x599EDB3E)
-I (..\HARDWARE\ADC\adc.h)(0x6097AE8B)
+I (..\HARDWARE\ADC\adc.h)(0x60992FD5)
 I (..\HARDWARE\SWEEP\sweep.h)(0x6097AABA)
 F (..\HARDWARE\TOUCH\touch.c)(0x5710F391)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I ..\CORE -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\HARDWARE\LED -I ..\HARDWARE\LCD -I ..\HARDWARE\KEY -I ..\HARDWARE\ADC -I ..\HARDWARE\DAC -I ..\FWLIB\inc -I ..\HARDWARE\TIMER -I ..\HARDWARE\24CXX -I ..\HARDWARE\TOUCH -I ..\HARDWARE\KEY -I ..\HARDWARE\IIC -I ..\HARDWARE\BUTTON_APP -I ..\HARDWARE\DSP_LIB -I ..\HARDWARE\DSP_LIB\Include -I ..\HARDWARE\FFT -I ..\HARDWARE\SWEEP-I.\RTE\_DAC-ID:\app\keilARM\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\app\keilARM\ARM\CMSIS\Include-ID:\app\keilARM\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Device\Include-D__UVISION_VERSION="526" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER --C99-o ..\obj\touch.o --omf_browse ..\obj\touch.crf --depend ..\obj\touch.d)
 I (..\HARDWARE\TOUCH\touch.h)(0x5710F391)
@@ -755,10 +755,10 @@ I (..\HARDWARE\DAC\dac.h)(0x60977AB8)
 I (..\HARDWARE\DSP_LIB\Include\arm_math.h)(0x60974218)
 I (D:\app\keilARM\ARM\ARMCC\include\string.h)(0x599EDB3C)
 I (D:\app\keilARM\ARM\ARMCC\include\math.h)(0x599EDB3E)
-I (..\HARDWARE\ADC\adc.h)(0x6097AE8B)
+I (..\HARDWARE\ADC\adc.h)(0x60992FD5)
 I (..\HARDWARE\SWEEP\sweep.h)(0x6097AABA)
 I (..\HARDWARE\TOUCH\ott2001a.h)(0x5710F391)
-F (..\HARDWARE\BUTTON_APP\button_app.c)(0x6097C813)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I ..\CORE -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\HARDWARE\LED -I ..\HARDWARE\LCD -I ..\HARDWARE\KEY -I ..\HARDWARE\ADC -I ..\HARDWARE\DAC -I ..\FWLIB\inc -I ..\HARDWARE\TIMER -I ..\HARDWARE\24CXX -I ..\HARDWARE\TOUCH -I ..\HARDWARE\KEY -I ..\HARDWARE\IIC -I ..\HARDWARE\BUTTON_APP -I ..\HARDWARE\DSP_LIB -I ..\HARDWARE\DSP_LIB\Include -I ..\HARDWARE\FFT -I ..\HARDWARE\SWEEP-I.\RTE\_DAC-ID:\app\keilARM\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\app\keilARM\ARM\CMSIS\Include-ID:\app\keilARM\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Device\Include-D__UVISION_VERSION="526" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER --C99-o ..\obj\button_app.o --omf_browse ..\obj\button_app.crf --depend ..\obj\button_app.d)
+F (..\HARDWARE\BUTTON_APP\button_app.c)(0x60992F33)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I ..\CORE -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\HARDWARE\LED -I ..\HARDWARE\LCD -I ..\HARDWARE\KEY -I ..\HARDWARE\ADC -I ..\HARDWARE\DAC -I ..\FWLIB\inc -I ..\HARDWARE\TIMER -I ..\HARDWARE\24CXX -I ..\HARDWARE\TOUCH -I ..\HARDWARE\KEY -I ..\HARDWARE\IIC -I ..\HARDWARE\BUTTON_APP -I ..\HARDWARE\DSP_LIB -I ..\HARDWARE\DSP_LIB\Include -I ..\HARDWARE\FFT -I ..\HARDWARE\SWEEP-I.\RTE\_DAC-ID:\app\keilARM\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\app\keilARM\ARM\CMSIS\Include-ID:\app\keilARM\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Device\Include-D__UVISION_VERSION="526" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER --C99-o ..\obj\button_app.o --omf_browse ..\obj\button_app.crf --depend ..\obj\button_app.d)
 I (..\HARDWARE\BUTTON_APP\button_app.h)(0x609743FC)
 I (..\SYSTEM\sys\sys.h)(0x6097A5BE)
 I (..\USER\stm32f4xx.h)(0x5710F380)
@@ -813,10 +813,10 @@ I (..\HARDWARE\DAC\dac.h)(0x60977AB8)
 I (..\HARDWARE\DSP_LIB\Include\arm_math.h)(0x60974218)
 I (D:\app\keilARM\ARM\ARMCC\include\string.h)(0x599EDB3C)
 I (D:\app\keilARM\ARM\ARMCC\include\math.h)(0x599EDB3E)
-I (..\HARDWARE\ADC\adc.h)(0x6097AE8B)
+I (..\HARDWARE\ADC\adc.h)(0x60992FD5)
 I (..\HARDWARE\SWEEP\sweep.h)(0x6097AABA)
-F (..\HARDWARE\ADC\adc.c)(0x6097AE8E)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I ..\CORE -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\HARDWARE\LED -I ..\HARDWARE\LCD -I ..\HARDWARE\KEY -I ..\HARDWARE\ADC -I ..\HARDWARE\DAC -I ..\FWLIB\inc -I ..\HARDWARE\TIMER -I ..\HARDWARE\24CXX -I ..\HARDWARE\TOUCH -I ..\HARDWARE\KEY -I ..\HARDWARE\IIC -I ..\HARDWARE\BUTTON_APP -I ..\HARDWARE\DSP_LIB -I ..\HARDWARE\DSP_LIB\Include -I ..\HARDWARE\FFT -I ..\HARDWARE\SWEEP-I.\RTE\_DAC-ID:\app\keilARM\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\app\keilARM\ARM\CMSIS\Include-ID:\app\keilARM\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Device\Include-D__UVISION_VERSION="526" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER --C99-o ..\obj\adc.o --omf_browse ..\obj\adc.crf --depend ..\obj\adc.d)
-I (..\HARDWARE\ADC\adc.h)(0x6097AE8B)
+F (..\HARDWARE\ADC\adc.c)(0x60992FD5)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I ..\CORE -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\HARDWARE\LED -I ..\HARDWARE\LCD -I ..\HARDWARE\KEY -I ..\HARDWARE\ADC -I ..\HARDWARE\DAC -I ..\FWLIB\inc -I ..\HARDWARE\TIMER -I ..\HARDWARE\24CXX -I ..\HARDWARE\TOUCH -I ..\HARDWARE\KEY -I ..\HARDWARE\IIC -I ..\HARDWARE\BUTTON_APP -I ..\HARDWARE\DSP_LIB -I ..\HARDWARE\DSP_LIB\Include -I ..\HARDWARE\FFT -I ..\HARDWARE\SWEEP-I.\RTE\_DAC-ID:\app\keilARM\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\app\keilARM\ARM\CMSIS\Include-ID:\app\keilARM\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Device\Include-D__UVISION_VERSION="526" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER --C99-o ..\obj\adc.o --omf_browse ..\obj\adc.crf --depend ..\obj\adc.d)
+I (..\HARDWARE\ADC\adc.h)(0x60992FD5)
 I (..\SYSTEM\sys\sys.h)(0x6097A5BE)
 I (..\USER\stm32f4xx.h)(0x5710F380)
 I (..\CORE\core_cm4.h)(0x5710F37F)
@@ -872,7 +872,7 @@ I (..\HARDWARE\DSP_LIB\Include\arm_math.h)(0x60974218)
 I (D:\app\keilARM\ARM\ARMCC\include\string.h)(0x599EDB3C)
 I (D:\app\keilARM\ARM\ARMCC\include\math.h)(0x599EDB3E)
 I (..\HARDWARE\SWEEP\sweep.h)(0x6097AABA)
-F (..\HARDWARE\FFT\fft.c)(0x60975C1D)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I ..\CORE -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\HARDWARE\LED -I ..\HARDWARE\LCD -I ..\HARDWARE\KEY -I ..\HARDWARE\ADC -I ..\HARDWARE\DAC -I ..\FWLIB\inc -I ..\HARDWARE\TIMER -I ..\HARDWARE\24CXX -I ..\HARDWARE\TOUCH -I ..\HARDWARE\KEY -I ..\HARDWARE\IIC -I ..\HARDWARE\BUTTON_APP -I ..\HARDWARE\DSP_LIB -I ..\HARDWARE\DSP_LIB\Include -I ..\HARDWARE\FFT -I ..\HARDWARE\SWEEP-I.\RTE\_DAC-ID:\app\keilARM\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\app\keilARM\ARM\CMSIS\Include-ID:\app\keilARM\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Device\Include-D__UVISION_VERSION="526" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER --C99-o ..\obj\fft.o --omf_browse ..\obj\fft.crf --depend ..\obj\fft.d)
+F (..\HARDWARE\FFT\fft.c)(0x60992E75)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I ..\CORE -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\HARDWARE\LED -I ..\HARDWARE\LCD -I ..\HARDWARE\KEY -I ..\HARDWARE\ADC -I ..\HARDWARE\DAC -I ..\FWLIB\inc -I ..\HARDWARE\TIMER -I ..\HARDWARE\24CXX -I ..\HARDWARE\TOUCH -I ..\HARDWARE\KEY -I ..\HARDWARE\IIC -I ..\HARDWARE\BUTTON_APP -I ..\HARDWARE\DSP_LIB -I ..\HARDWARE\DSP_LIB\Include -I ..\HARDWARE\FFT -I ..\HARDWARE\SWEEP-I.\RTE\_DAC-ID:\app\keilARM\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\app\keilARM\ARM\CMSIS\Include-ID:\app\keilARM\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Device\Include-D__UVISION_VERSION="526" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER --C99-o ..\obj\fft.o --omf_browse ..\obj\fft.crf --depend ..\obj\fft.d)
 I (..\HARDWARE\FFT\fft.h)(0x60975C1D)
 I (..\SYSTEM\sys\sys.h)(0x6097A5BE)
 I (..\USER\stm32f4xx.h)(0x5710F380)
@@ -928,9 +928,9 @@ I (..\HARDWARE\DAC\dac.h)(0x60977AB8)
 I (..\HARDWARE\DSP_LIB\Include\arm_math.h)(0x60974218)
 I (D:\app\keilARM\ARM\ARMCC\include\string.h)(0x599EDB3C)
 I (D:\app\keilARM\ARM\ARMCC\include\math.h)(0x599EDB3E)
-I (..\HARDWARE\ADC\adc.h)(0x6097AE8B)
+I (..\HARDWARE\ADC\adc.h)(0x60992FD5)
 I (..\HARDWARE\SWEEP\sweep.h)(0x6097AABA)
-F (..\HARDWARE\SWEEP\sweep.c)(0x6097AD60)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I ..\CORE -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\HARDWARE\LED -I ..\HARDWARE\LCD -I ..\HARDWARE\KEY -I ..\HARDWARE\ADC -I ..\HARDWARE\DAC -I ..\FWLIB\inc -I ..\HARDWARE\TIMER -I ..\HARDWARE\24CXX -I ..\HARDWARE\TOUCH -I ..\HARDWARE\KEY -I ..\HARDWARE\IIC -I ..\HARDWARE\BUTTON_APP -I ..\HARDWARE\DSP_LIB -I ..\HARDWARE\DSP_LIB\Include -I ..\HARDWARE\FFT -I ..\HARDWARE\SWEEP-I.\RTE\_DAC-ID:\app\keilARM\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\app\keilARM\ARM\CMSIS\Include-ID:\app\keilARM\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Device\Include-D__UVISION_VERSION="526" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER --C99-o ..\obj\sweep.o --omf_browse ..\obj\sweep.crf --depend ..\obj\sweep.d)
+F (..\HARDWARE\SWEEP\sweep.c)(0x60992ECD)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I ..\CORE -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\HARDWARE\LED -I ..\HARDWARE\LCD -I ..\HARDWARE\KEY -I ..\HARDWARE\ADC -I ..\HARDWARE\DAC -I ..\FWLIB\inc -I ..\HARDWARE\TIMER -I ..\HARDWARE\24CXX -I ..\HARDWARE\TOUCH -I ..\HARDWARE\KEY -I ..\HARDWARE\IIC -I ..\HARDWARE\BUTTON_APP -I ..\HARDWARE\DSP_LIB -I ..\HARDWARE\DSP_LIB\Include -I ..\HARDWARE\FFT -I ..\HARDWARE\SWEEP-I.\RTE\_DAC-ID:\app\keilARM\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\app\keilARM\ARM\CMSIS\Include-ID:\app\keilARM\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Device\Include-D__UVISION_VERSION="526" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER --C99-o ..\obj\sweep.o --omf_browse ..\obj\sweep.crf --depend ..\obj\sweep.d)
 I (..\HARDWARE\SWEEP\sweep.h)(0x6097AABA)
 I (..\SYSTEM\sys\sys.h)(0x6097A5BE)
 I (..\USER\stm32f4xx.h)(0x5710F380)
@@ -986,7 +986,7 @@ I (..\HARDWARE\DAC\dac.h)(0x60977AB8)
 I (..\HARDWARE\DSP_LIB\Include\arm_math.h)(0x60974218)
 I (D:\app\keilARM\ARM\ARMCC\include\string.h)(0x599EDB3C)
 I (D:\app\keilARM\ARM\ARMCC\include\math.h)(0x599EDB3E)
-I (..\HARDWARE\ADC\adc.h)(0x6097AE8B)
+I (..\HARDWARE\ADC\adc.h)(0x60992FD5)
 F (..\SYSTEM\delay\delay.c)(0x5710F380)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I ..\CORE -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\HARDWARE\LED -I ..\HARDWARE\LCD -I ..\HARDWARE\KEY -I ..\HARDWARE\ADC -I ..\HARDWARE\DAC -I ..\FWLIB\inc -I ..\HARDWARE\TIMER -I ..\HARDWARE\24CXX -I ..\HARDWARE\TOUCH -I ..\HARDWARE\KEY -I ..\HARDWARE\IIC -I ..\HARDWARE\BUTTON_APP -I ..\HARDWARE\DSP_LIB -I ..\HARDWARE\DSP_LIB\Include -I ..\HARDWARE\FFT -I ..\HARDWARE\SWEEP-I.\RTE\_DAC-ID:\app\keilARM\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\app\keilARM\ARM\CMSIS\Include-ID:\app\keilARM\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Device\Include-D__UVISION_VERSION="526" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER --C99-o ..\obj\delay.o --omf_browse ..\obj\delay.crf --depend ..\obj\delay.d)
 I (..\SYSTEM\delay\delay.h)(0x5710F380)
 I (..\SYSTEM\sys\sys.h)(0x6097A5BE)
@@ -1042,7 +1042,7 @@ I (..\HARDWARE\DAC\dac.h)(0x60977AB8)
 I (..\HARDWARE\DSP_LIB\Include\arm_math.h)(0x60974218)
 I (D:\app\keilARM\ARM\ARMCC\include\string.h)(0x599EDB3C)
 I (D:\app\keilARM\ARM\ARMCC\include\math.h)(0x599EDB3E)
-I (..\HARDWARE\ADC\adc.h)(0x6097AE8B)
+I (..\HARDWARE\ADC\adc.h)(0x60992FD5)
 I (..\HARDWARE\SWEEP\sweep.h)(0x6097AABA)
 F (..\SYSTEM\sys\sys.c)(0x5710F380)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I ..\CORE -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\HARDWARE\LED -I ..\HARDWARE\LCD -I ..\HARDWARE\KEY -I ..\HARDWARE\ADC -I ..\HARDWARE\DAC -I ..\FWLIB\inc -I ..\HARDWARE\TIMER -I ..\HARDWARE\24CXX -I ..\HARDWARE\TOUCH -I ..\HARDWARE\KEY -I ..\HARDWARE\IIC -I ..\HARDWARE\BUTTON_APP -I ..\HARDWARE\DSP_LIB -I ..\HARDWARE\DSP_LIB\Include -I ..\HARDWARE\FFT -I ..\HARDWARE\SWEEP-I.\RTE\_DAC-ID:\app\keilARM\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\app\keilARM\ARM\CMSIS\Include-ID:\app\keilARM\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Device\Include-D__UVISION_VERSION="526" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER --C99-o ..\obj\sys.o --omf_browse ..\obj\sys.crf --depend ..\obj\sys.d)
 I (..\SYSTEM\sys\sys.h)(0x6097A5BE)
@@ -1099,7 +1099,7 @@ I (..\HARDWARE\DAC\dac.h)(0x60977AB8)
 I (..\HARDWARE\DSP_LIB\Include\arm_math.h)(0x60974218)
 I (D:\app\keilARM\ARM\ARMCC\include\string.h)(0x599EDB3C)
 I (D:\app\keilARM\ARM\ARMCC\include\math.h)(0x599EDB3E)
-I (..\HARDWARE\ADC\adc.h)(0x6097AE8B)
+I (..\HARDWARE\ADC\adc.h)(0x60992FD5)
 I (..\HARDWARE\SWEEP\sweep.h)(0x6097AABA)
 F (..\SYSTEM\usart\usart.c)(0x5DF098C4)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I ..\CORE -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\HARDWARE\LED -I ..\HARDWARE\LCD -I ..\HARDWARE\KEY -I ..\HARDWARE\ADC -I ..\HARDWARE\DAC -I ..\FWLIB\inc -I ..\HARDWARE\TIMER -I ..\HARDWARE\24CXX -I ..\HARDWARE\TOUCH -I ..\HARDWARE\KEY -I ..\HARDWARE\IIC -I ..\HARDWARE\BUTTON_APP -I ..\HARDWARE\DSP_LIB -I ..\HARDWARE\DSP_LIB\Include -I ..\HARDWARE\FFT -I ..\HARDWARE\SWEEP-I.\RTE\_DAC-ID:\app\keilARM\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\app\keilARM\ARM\CMSIS\Include-ID:\app\keilARM\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Device\Include-D__UVISION_VERSION="526" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER --C99-o ..\obj\usart.o --omf_browse ..\obj\usart.crf --depend ..\obj\usart.d)
 I (..\SYSTEM\sys\sys.h)(0x6097A5BE)
@@ -1156,7 +1156,7 @@ I (..\HARDWARE\DAC\dac.h)(0x60977AB8)
 I (..\HARDWARE\DSP_LIB\Include\arm_math.h)(0x60974218)
 I (D:\app\keilARM\ARM\ARMCC\include\string.h)(0x599EDB3C)
 I (D:\app\keilARM\ARM\ARMCC\include\math.h)(0x599EDB3E)
-I (..\HARDWARE\ADC\adc.h)(0x6097AE8B)
+I (..\HARDWARE\ADC\adc.h)(0x60992FD5)
 I (..\HARDWARE\SWEEP\sweep.h)(0x6097AABA)
 F (..\CORE\startup_stm32f40_41xxx.s)(0x5710F37F)(--cpu Cortex-M4.fp -g --apcs=interwork -I.\RTE\_DAC-ID:\app\keilARM\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\app\keilARM\ARM\CMSIS\Include-ID:\app\keilARM\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Device\Include--pd "__UVISION_VERSION SETA 526" --pd "STM32F407xx SETA 1"--list ..\obj\startup_stm32f40_41xxx.lst --xref -o ..\obj\startup_stm32f40_41xxx.o --depend ..\obj\startup_stm32f40_41xxx.d)
 F (..\FWLIB\src\misc.c)(0x5710F37F)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I ..\CORE -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\HARDWARE\LED -I ..\HARDWARE\LCD -I ..\HARDWARE\KEY -I ..\HARDWARE\ADC -I ..\HARDWARE\DAC -I ..\FWLIB\inc -I ..\HARDWARE\TIMER -I ..\HARDWARE\24CXX -I ..\HARDWARE\TOUCH -I ..\HARDWARE\KEY -I ..\HARDWARE\IIC -I ..\HARDWARE\BUTTON_APP -I ..\HARDWARE\DSP_LIB -I ..\HARDWARE\DSP_LIB\Include -I ..\HARDWARE\FFT -I ..\HARDWARE\SWEEP-I.\RTE\_DAC-ID:\app\keilARM\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\app\keilARM\ARM\CMSIS\Include-ID:\app\keilARM\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Device\Include-D__UVISION_VERSION="526" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER --C99-o ..\obj\misc.o --omf_browse ..\obj\misc.crf --depend ..\obj\misc.d)
@@ -2388,5 +2388,5 @@ I (..\FWLIB\inc\stm32f4xx_rng.h)(0x5710F37F)
 I (..\FWLIB\inc\stm32f4xx_dac.h)(0x5710F37F)
 I (..\FWLIB\inc\stm32f4xx_dcmi.h)(0x5710F37F)
 I (..\FWLIB\inc\stm32f4xx_fsmc.h)(0x5710F37F)
-F (..\readme.txt)(0x5710F380)()
+F (..\readme.txt)(0x00000000)()
 F (..\HARDWARE\DSP_LIB\arm_cortexM4lf_math.lib)(0x5710F3F9)()

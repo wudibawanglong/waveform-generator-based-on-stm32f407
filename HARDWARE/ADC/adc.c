@@ -14,7 +14,12 @@ u16 cnt_tim = 0; // 采样计数
 
 
 
-//初始化ADC															   
+/**
+ * @brief 	初始化ADC
+ * 
+ * @param		none
+ * @return	none 
+ */															   
 void  Adc_Init(void)
 {    
   GPIO_InitTypeDef  GPIO_InitStructure;
@@ -54,10 +59,12 @@ void  Adc_Init(void)
 }	
 
 
-//获得ADC值
-//ch: @ref ADC_channels 
-//通道值 0~16取值范围为：ADC_Channel_0~ADC_Channel_16
-//返回值:转换结果
+/**
+ * @brief 	获取ADC的值
+ * 
+ * @param		ch：通道值  ADC_Channel_0~ADC_Channel_16
+ * @return	转换结果 
+ */
 u16 Get_Adc(u8 ch)   
 {
 	  	//设置指定ADC的规则组通道，一个序列，采样时间
@@ -70,11 +77,14 @@ u16 Get_Adc(u8 ch)
 	return ADC_GetConversionValue(ADC1);	//返回最近一次ADC1规则组的转换结果
 }
 
-
-//获取通道ch的转换值，取times次,然后平均 
-//ch:通道编号
-//times:获取次数
-//返回值:通道ch的times次转换结果平均值
+/**
+ * @brief 	获取通道ch的转换值，取times次,然后平均
+ * 
+ * @param		ch：通道值  ADC_Channel_0~ADC_Channel_16
+ *					times：获取次数
+ *
+ * @return	通道ch的times次转换结果平均值
+ */
 u16 Get_Adc_Average(u8 ch,u8 times)
 {
 	u32 temp_val=0;
@@ -87,6 +97,15 @@ u16 Get_Adc_Average(u8 ch,u8 times)
 	return temp_val/times;
 }
 
+
+/**
+ * @brief 	TIM3中断初始化函数
+ * 
+ * @param		arr
+ *					psc
+ *
+ * @return	none 
+ */
 void TIM3_Int_Init_2(u16 arr,u16 psc)   //通用定时器3初始化
 {
     TIM_TimeBaseInitTypeDef TIM_TimeBaseInitStructure;  
@@ -114,7 +133,12 @@ void TIM3_Int_Init_2(u16 arr,u16 psc)   //通用定时器3初始化
 
 
 
-
+/**
+ * @brief 	TIM3中断服务函数
+ * 
+ * @param		none
+ * @return	none 
+ */
 void TIM3_IRQHandler(void)  // 定时器中断服务函数
 {
 	if(TIM_GetITStatus(TIM3,TIM_IT_Update)==SET) //溢出，中断
@@ -131,11 +155,3 @@ void TIM3_IRQHandler(void)  // 定时器中断服务函数
 	}
 	TIM_ClearITPendingBit(TIM3,TIM_IT_Update);  //重置计数器
 }
-
-
-void wave_form(void)
-{
-	
-}
-
-

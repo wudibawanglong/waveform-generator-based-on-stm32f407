@@ -3,15 +3,11 @@
 
 
 #define TIM2_CLK 84000000
-u16 DAC_Data[dot_count] = {0};	
-
-
 #define dianshu 128
-
+u16 DAC_Data[dot_count] = {0};
 uint16_t g_Wave1[128];
 
-
-/*  正弦波数据，12bit，1个周期128个点, 0-4095之间变化 */
+/* 正弦波数据，12bit，1个周期128个点, 0-4095之间变化 */
 const uint16_t g_SineWave128[] = {
 	2047 ,  2147 ,	2248 ,	2347 ,	2446 ,	2544 ,	2641 ,	2737 ,
 	2830 ,  2922 ,	3012 ,	3099 ,	3184 ,	3266 ,	3346 ,	3422 ,
@@ -31,7 +27,7 @@ const uint16_t g_SineWave128[] = {
 	1264 ,	1357 ,	1453 ,	1550 ,	1648 ,	1747 ,	1846 ,	1947
 };
 
-
+/* 64点Sin数据 */
 const uint16_t g_SineWave64[] = {
 	2048, 2252, 2454, 2652, 2844, 3027, 3202, 3364, 
 	3514, 3649, 3768, 3870, 3954, 4019, 4065, 4090, 
@@ -46,7 +42,6 @@ const uint16_t g_SineWave64[] = {
 
 
 /*
- 
 ********************************************************************************
  
 system_stm32f4xx.c 文件中 voidSetSysClock(void) 函数对时钟的配置如下：
@@ -72,14 +67,12 @@ TIM 更新周期是 = TIMCLK / （TIM_Period + 1）/（TIM_Prescaler+ 1）
 
 
 
-/*
-*********************************************************************************************************
-*	函 数 名: bsp_InitDAC1
-*	功能说明: 配置PA4/DAC1
-*	形    参: 无
-*	返 回 值: 无
-*********************************************************************************************************
-*/
+/**
+ * @brief		DAC初始化函数
+ * 
+ * @param		none
+ * @return	none 
+ */
 void bsp_InitDAC1(void)
 {	
 	/* 配置GPIO */
@@ -112,16 +105,16 @@ void bsp_InitDAC1(void)
 	}
 }
 
-/*
-*********************************************************************************************************
-*	函 数 名: dac1_InitForDMA
-*	功能说明: 配置PA4 为DAC_OUT1, 启用DMA2
-*	形    参: _BufAddr : DMA数据缓冲区地址
-*			  _Count   : 缓冲区样本个数
-*			 _DacFreq  : DAC样本更新频率
-*	返 回 值: 无
-*********************************************************************************************************
-*/
+
+/**
+ * @brief		DMA初始化函数
+ * 
+ * @param		_BufAddr : DMA数据缓冲区地址
+ *					_Count   : 缓冲区样本个数
+ *					_DacFreq  : DAC样本更新频率
+ *
+ * @return	none 
+ */
 void dac1_InitForDMA(uint32_t _BufAddr, uint32_t _Count, uint32_t _DacFreq)
 {	
 	uint16_t usPeriod;
@@ -218,19 +211,16 @@ void dac1_InitForDMA(uint32_t _BufAddr, uint32_t _Count, uint32_t _DacFreq)
 }
 
 
-/*
-*********************************************************************************************************
-*	函 数 名: dac1_SetRectWave
-*	功能说明: DAC1输出方波
-*	形    参: _low  : 低电平时DAC, 
-*			  _high : 高电平时DAC
-*			  _freq : 频率 Hz
-*			  _duty : 占空比 2% - 98%, 调节步数 1%
-*	返 回 值: 无
-*********************************************************************************************************
-*/
-
-
+/**
+ * @brief		DAC1输出方波
+ * 
+ * @param		_low  : 低电平时DAC
+ *					_high : 高电平时DAC
+ *					_freq : 频率 Hz
+ *					_duty : 占空比 2% - 98%, 调节步数 1%
+ *
+ * @return	none 
+ */
 void dac1_SetRectWave(uint16_t _low, uint16_t _high, uint32_t _freq, uint16_t _duty)
 {	
 	uint16_t i;
@@ -249,6 +239,17 @@ void dac1_SetRectWave(uint16_t _low, uint16_t _high, uint32_t _freq, uint16_t _d
 	
 	dac1_InitForDMA((uint32_t)&g_Wave1, 128, _freq * 128);
 }
+
+/**
+ * @brief		DAC1输出100kHz方波
+ * 
+ * @param		_low  : 低电平时DAC
+ *					_high : 高电平时DAC
+ *					_freq : 频率 Hz
+ *					_duty : 占空比 2% - 98%, 调节步数 1%
+ *
+ * @return	none 
+ */
 void dac1_SetRectWave_100kHz(uint16_t _low, uint16_t _high, uint32_t _freq, uint16_t _duty)
 {	
 	uint16_t i;
@@ -265,16 +266,14 @@ void dac1_SetRectWave_100kHz(uint16_t _low, uint16_t _high, uint32_t _freq, uint
 }
 
 
-
-/*
-*********************************************************************************************************
-*	函 数 名: dac1_SetSinWave
-*	功能说明: DAC1输出正弦波
-*	形    参: _vpp : 幅度 0-4095;
-*			  _freq : 频率
-*	返 回 值: 无
-*********************************************************************************************************
-*/
+/**
+ * @brief		DAC1输出正弦波
+ * 
+ * @param		_vpp : 幅度 0-4095
+ *					_freq : 频率
+ * 
+ * @return	none 
+ */
 void dac1_SetSinWave(uint16_t _vpp, uint32_t _freq)
 {
 	uint32_t i;
@@ -296,6 +295,14 @@ void dac1_SetSinWave(uint16_t _vpp, uint32_t _freq)
 	dac1_InitForDMA((uint32_t)&g_Wave1, 128, _freq * 128);
 }
 
+/**
+ * @brief		DAC1输出100kHz正弦波
+ * 
+ * @param		_vpp : 幅度 0-4095
+ *					_freq : 频率
+ * 
+ * @return	none 
+ */
 void dac1_SetSinWave_100kHz(uint16_t _vpp, uint32_t _freq)
 {
 	uint32_t i;
@@ -317,17 +324,16 @@ void dac1_SetSinWave_100kHz(uint16_t _vpp, uint32_t _freq)
 }
 
 
-/*
-*********************************************************************************************************
-*	函 数 名: dac1_SetTriWave
-*	功能说明: DAC1输出三角波
-*	形    参: _low : 低电平时DAC, 
-*			  _high : 高电平时DAC
-*			  _freq : 频率 Hz
-*			  _duty : 占空比
-*	返 回 值: 无
-*********************************************************************************************************
-*/
+/**
+ * @brief		DAC1输出三角波
+ * 
+ * @param		_low : 低电平时DAC
+ *					_high : 高电平时DAC
+ *					_freq : 频率 Hz
+ *					_duty : 占空比
+ *
+ * @return	none 
+ */
 void dac1_SetTriWave(uint16_t _low, uint16_t _high, uint32_t _freq, uint16_t _duty)
 {	
 	uint32_t i;
@@ -362,6 +368,16 @@ void dac1_SetTriWave(uint16_t _low, uint16_t _high, uint32_t _freq, uint16_t _du
 	dac1_InitForDMA((uint32_t)&g_Wave1, 128, _freq * 128);
 }
 
+/**
+ * @brief		DAC1输出100kHz三角波
+ * 
+ * @param		_low : 低电平时DAC
+ *					_high : 高电平时DAC
+ *					_freq : 频率 Hz
+ *					_duty : 占空比
+ *
+ * @return	none 
+ */
 void dac1_SetTriWave_100kHz(uint16_t _low, uint16_t _high, uint32_t _freq, uint16_t _duty)
 {	
 	uint32_t i;
@@ -397,10 +413,12 @@ void dac1_SetTriWave_100kHz(uint16_t _low, uint16_t _high, uint32_t _freq, uint1
 }
 
 
-
-
-
-
+/**
+ * @brief 	在屏幕上显示输出的波形
+ * 
+ * @param		none
+ * @return	none 
+ */
 void Show_Wave(void)
 {
 	LCD_Fast_DrawPoint(23, 23, YELLOW);
@@ -415,7 +433,7 @@ void Show_Wave(void)
 
 
 
-/*****************************************************************************************************************/
+/**************************************下面的代码没有用***************************************************************************/
 
 
 
