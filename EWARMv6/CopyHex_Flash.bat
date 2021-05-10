@@ -1,0 +1,1 @@
+copy Flash\Exe\project.hex ..\output(iar).hex
